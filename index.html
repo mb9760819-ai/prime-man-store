@@ -237,7 +237,7 @@ PRIME MAN STORE
 
 <script>
 
-emailjs.init("YOUR_PUBLIC_KEY");
+emailjs.init("xqmosYYqEUpu4Gb1u");
 
 function order(product, sizeId){
 document.getElementById("product").value = product;
@@ -248,7 +248,7 @@ new bootstrap.Modal(document.getElementById('orderModal')).show();
 document.getElementById("orderForm").addEventListener("submit", function(e){
 e.preventDefault();
 
-emailjs.send("YOUR_SERVICE_ID","YOUR_TEMPLATE_ID",{
+emailjs.send("service_33fq1pl","template_ir8p2n8",{
 product: document.getElementById("product").value,
 size: document.getElementById("size").value,
 name: document.getElementById("name").value,
@@ -264,4 +264,5 @@ alert("تم ارسال الطلب بنجاح");
 </script>
 
 </body>
+
 </html>
